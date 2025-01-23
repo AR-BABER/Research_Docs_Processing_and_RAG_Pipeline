@@ -1,0 +1,890 @@
+Delivered-To: over120mmhg@gmail.com
+Received: by 2002:a05:6a10:f02c:b0:52b:5f32:7102 with SMTP id u12csp1365884pxk;
+        Mon, 1 Jan 2024 19:59:45 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IE5dQNlcC3jWKpVFxxEJbiDRLrovgX9HJti+S4+Q0bWYEwY5lrrvXarUjdHQZ43PXE3E8lS
+X-Received: by 2002:a05:6870:40c6:b0:203:7c4c:a29 with SMTP id l6-20020a05687040c600b002037c4c0a29mr13221493oal.77.1704167985310;
+        Mon, 01 Jan 2024 19:59:45 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1704167985; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fP8n7Ti5i55LUWyYi1hawqraQytT+D8dvN/D+JMyUiaSP9tcnvlCdtv5QT2EeUSSfF
+         4JL7FN2myiFgsFPvZJYxpYwN6D0vL+a69Hnl7U3z2KHOrUgYAWG+4RwqK7AfmObKplrj
+         CoCViH/RqegRuUgEd1eVW8QGqdUNcBFnhRP8QKik89mfiOpeBlj4HfDXTEzskIOo6PD9
+         xsGMzTL6PK+17dsbySR5WVNcVdcwBj1p0WoOOFZ8DoeACtB+J+npwr0n2w98HQvgf4EH
+         sY/V9o1hku+LQGONu27t2wYVX1FFybazzXZq6TezKbw42zGCDbFA05ciHH39MULC4NcD
+         nZpQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:precedence:list-archive
+         :list-subscribe:list-unsubscribe:list-help:message-id:subject
+         :reply-to:from:to:date:dkim-signature;
+        bh=4lX1eB3PvU9MOYrrrs7JRMhnSa4aMYAKGBCgZxDGyP8=;
+        fh=WVayDfykfzJhB2T4XpjkQra1MZhc/ct1J2MOiDqXKVU=;
+        b=FTGaEX8hcvh0FdrJNQJ8eyYxmrL2jnrcRQtvumElkeOCiPT/I7xAxrHHF4hOY8UTX7
+         PjFn91lFfcmJRlApmU9E4agdxkckahcdCX4QZg8iU8OwxUEdqpxxnMfa8FE4JrO0J9OX
+         0KLVpOGrWlknGm7CaVD8DXI4mzb/E2y4dMNi4HyL0ZmDx/GcgtXWCeNMcYOxyOmKGKM5
+         /M4SAGjAm5b3Z5R2S0FATDFGAuWFjptgoryT4NGm72JXpqWcnehOEXGC+3QgREagCMo9
+         zXD7vw21GXHDCPqCBXJpC4DWHngg1mZW8wDCaFcszn3wyhdeRa0jrmBZY32MgaLLCi8y
+         erzQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@wordpress.com header.s=automattic1 header.b=JsqywxW9;
+       spf=pass (google.com: domain of over120mmhg=gmail.com@b.wordpress.com designates 192.0.80.215 as permitted sender) smtp.mailfrom="over120mmhg=gmail.com@b.wordpress.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=wordpress.com
+Return-Path: <over120mmhg=gmail.com@b.wordpress.com>
+Received: from smtp1-2.dfw.wordpress.com (smtp1-2.dfw.wordpress.com. [192.0.80.215])
+        by mx.google.com with ESMTPS id 24-20020aca1118000000b003ba1710a8ebsi7487417oir.79.2024.01.01.19.59.45
+        for <over120mmhg@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 01 Jan 2024 19:59:45 -0800 (PST)
+Received-SPF: pass (google.com: domain of over120mmhg=gmail.com@b.wordpress.com designates 192.0.80.215 as permitted sender) client-ip=192.0.80.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@wordpress.com header.s=automattic1 header.b=JsqywxW9;
+       spf=pass (google.com: domain of over120mmhg=gmail.com@b.wordpress.com designates 192.0.80.215 as permitted sender) smtp.mailfrom="over120mmhg=gmail.com@b.wordpress.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=wordpress.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=wordpress.com;
+	s=automattic1; t=1704167985;
+	bh=EpstLZ/An3B4dj5b0DUEC7A8yZ0WRB61zl/3LDZLZZE=;
+	h=Date:To:From:Reply-To:Subject:List-Help:List-Unsubscribe:
+	 List-Subscribe:List-Archive:From;
+	b=JsqywxW9/7KA6CP1/hFY0RWQrd6f0BTyk1dsBph1oev2PCxOwnS7u/eL2KGAL07AD
+	 pP+gh0gNGZv10+q9lZCN6Aaby9O1aiaD4ivwj1nfoEWtVv9QkFZGnL7BTaqvA9i98y
+	 salSfvo0iLAMDnRv7Z9ftIC3vSW8wkEsAN+1l8s/um5mD+HpOEIXqZjYgiRF6UUpXw
+	 XzzE5B6zsj+Pg+niKEHapMeceJhyb3+IHj6zgTABDnD76iS67nZuMa4oLAY1o68gQu
+	 uPPHBMmob0V6wXkCrAJVb0Dz4JTwet56JdVyywlEdbZ43ElqY1IKEU/M9BAZJz+sKT
+	 tvV+4uK5Pnqsw==
+Received: from wordpress.com (unknown [192.0.89.195])
+	by smtp1.dfw.wordpress.com (Postfix) with ESMTP id 4T3zdF03JHz1Z2Ck
+	for <over120mmhg@gmail.com>; Tue,  2 Jan 2024 03:59:45 +0000 (UTC)
+Date: Tue, 2 Jan 2024 03:59:45 +0000
+To: over120mmhg@gmail.com
+From: brschultz gold wave market timing <comment-reply@wordpress.com>
+Reply-To: brschultz gold wave market timing <comment+e34uasdij4qr6c4_k0bqumeux@comment.wordpress.com>
+Subject: =?UTF-8?B?QkVUUyDigJMgQml0Y29pbiBtaW5pbmcgJiBiaXRjb2lucyBjb250aW51ZWQgY2xpbWIg4oCTIGhvcGluZyB0aGF0IEJFVFMgZWFybHktbWlkIEZlYnJ1YXJ5IG1hY3JvIHBlYWsgZ2V0cyBpdHMgY2hhbmNlIHRvIHNreXJvY2tldCBtZW1lLXN0eWxlIG92ZXIgbmV4dCB+IDI1IHRyYWRpbmcgZGF5cyBpbnRvIGl0cyBtYWNybyBmb3JlY2FzdGVkIHBlYWvigKY=?=
+Message-ID: <155710864.44894.0@wordpress.com>
+List-Help: <https://en.support.wordpress.com/following/>
+List-Unsubscribe: <https://subscribe.wordpress.com/?key=91fbe62997576ab40fc3e42d27cb24cd&amp;email=over120mmhg%40gmail.com&amp;b=OzlB36Dwn_ON0KE8xHDBw0rMQ7eZlSTiBvDREy2tcMCVuan_d3pWPHWilPo89Dn2jhdjS0MZosCyWNDgNxKyp2bbtFEW0R_tMig8beFfLsPO_Eda4t4jK2gYWQnXD92-RPP2Fg8_hOxhxySD1QEVAts6tqgSnMt1Nw%3D%3D>
+List-Subscribe: <https://brschultzgoldwave.wordpress.com>
+List-Archive: <https://brschultzgoldwave.wordpress.com>
+Precedence: bulk
+X-Automattic-Destination: b3ZlcjEyMG1taGdAZ21haWwuY29t
+X-Automattic-Tracking: 0:1:ofQ9nKSSimqcg+81N/kJng==.cQzBOWtSTp5sX4A8zlyvdRhsh3cVmUVayMsojqkaQ7ykWLRnMPVORl1Jspfp7H8vh6IfDnryGLjEJ37AL30vfg==:155710864:44894:0
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1=_19SrblUVZTSNSuE1CzoSa6E4GtRRDoW5eiwzQro3nQ"
+Content-Transfer-Encoding: 8bit
+
+--b1=_19SrblUVZTSNSuE1CzoSa6E4GtRRDoW5eiwzQro3nQ
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Post       : BETS &#8211; Bitcoin mining &amp; bitcoins continued climb &#8211; hoping that BETS early-mid February macro peak gets its chance to skyrocket meme-style over next ~ 25 trading days into its macro forecasted peak…
+URL        : https://brschultzgoldwave.wordpress.com/2024/01/02/bets-bitcoin-mining-bitcoins-continued-climb-hoping-that-bets-early-mid-february-macro-peak-gets-its-chance-to-skyrocket-meme-style-over-next-25-trading-days-into-its-macro-forecasted-peak/
+Posted     : January 2, 2024 at 3:58 am
+Author     : Schmitty
+Categories : Uncategorized
+
+https://brschultzgoldwave.files.wordpress.com/2023/12/bets-daily-zz.v4-peak-early-feb-2024.png?w=1024
+
+Add a comment to this post: https://brschultzgoldwave.wordpress.com/2024/01/02/bets-bitcoin-mining-bitcoins-continued-climb-hoping-that-bets-early-mid-february-macro-peak-gets-its-chance-to-skyrocket-meme-style-over-next-25-trading-days-into-its-macro-forecasted-peak/#respond
+
+-- 
+
+
+Manage Subscriptions
+https://subscribe.wordpress.com/?key=91fbe62997576ab40fc3e42d27cb24cd&email=over120mmhg%40gmail.com
+
+Unsubscribe:
+https://subscribe.wordpress.com/?key=91fbe62997576ab40fc3e42d27cb24cd&email=over120mmhg%40gmail.com&b=OzlB36Dwn_ON0KE8xHDBw0rMQ7eZlSTiBvDREy2tcMCVuan_d3pWPHWilPo89Dn2jhdjS0MZosCyWNDgNxKyp2bbtFEW0R_tMig8beFfLsPO_Eda4t4jK2gYWQnXD92-RPP2Fg8_hOxhxySD1QEVAts6tqgSnMt1Nw%3D%3D
+
+--b1=_19SrblUVZTSNSuE1CzoSa6E4GtRRDoW5eiwzQro3nQ
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0A<html>=0A<head>=0A    <meta name=3D"viewport" content=3D"=
+width=3Ddevice-width">=0A    <meta http-equiv=3D"Content-Type" content=3D"t=
+ext/html; charset=3DUTF-8">=0A<style type=3D"text/css">@media only screen a=
+nd (max-width: 800px) {table.body .container{width: 100% !important;}td > h=
+1.post-name{font-size: 28px !important;}.footer-content .footer-content-sec=
+tion,.footer-content .footer-content-section p{font-size: 14px !important;=
+=0A=09=09line-height: 150% !important;}}@media only screen and (max-width: =
+620px) {body,table.body{background-color: #fff !important;}table.body .wrap=
+per{padding: 32px 24px !important;}table.body .content{padding: 0 !importan=
+t;=0A=09=09margin: 0 !important;}table.body .container{padding: 0 !importan=
+t;=0A=09=09width: 100% !important;=0A=09=09margin-top: 0 !important;=0A=09=
+=09margin-bottom: 5px !important;}table.body .main{border-left-width: 0 !im=
+portant;=0A=09=09border-radius: 0 !important;=0A=09=09border-right-width: 0=
+ !important;}table.body .header{margin-bottom: 40px !important;}table.body =
+p{font-size: 18px !important;}table.body .btn{float: none !important;=0A=09=
+=09width: 100% !important;}table.body .btn table{width: 100% !important;}ta=
+ble.body .btn a{width: 100% !important;=0A=09=09background: #f9f9f9 !import=
+ant;=0A=09=09font-size: 18px !important;}table.body .btn-primary a{backgrou=
+nd: #0675c4 !important;}.btn-bar-wrapper{text-align: center;}.btn-bar-wrapp=
+er td{width: 100% !important;=0A=09=09display: inline-block !important;}.bt=
+n-wrapper,.btn-wrapper table.btn-anchor-wrapper{width: 100% !important;}.bt=
+n-anchor-wrapper a{display: block !important;=0A=09=09margin-bottom: 12px !=
+important;}.reply-nudge td,.reply-nudge img{vertical-align: top !important;=
+}.footer-section{padding: 32px 20px !important;}}</style>=0A<style>=0A     =
+   .apple-mail a {=0A=09=09=09color: inherit !important;=0A=09=09=09font-fa=
+mily: inherit !important;=0A=09=09=09font-size: inherit !important;=0A=09=
+=09=09font-weight: inherit !important;=0A=09=09=09line-height: inherit !imp=
+ortant;=0A=09=09=09text-decoration: none !important;=0A        }=0A    </st=
+yle></head>=0A=0A<body class=3D"post" style=3D'direction: ltr; background-c=
+olor: #f6f7f7; font-family: -apple-system, system-ui, blinkmacsystemfont, "=
+Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue"=
+, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing:=
+ grayscale; font-size: 15px; color: #101517; line-height: 1.7; margin: 0; p=
+adding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;'>=0A=
+=0A<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"body" style=3D"border-collapse: collapse; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; background-color: #f6f7f7; width: 100%;">=0A=
+=09<tr>=0A=09=09<td class=3D"container" style=3D'font-family: -apple-system=
+, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, U=
+buntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px; display: b=
+lock; max-width: 832px; width: 100%; margin: 0 auto;'>=0A=09=09=09<div clas=
+s=3D"content" style=3D"box-sizing: border-box; display: block; margin: 0 40=
+px; padding: 40px 0px 39px;">=0A=09=09=09=09<table role=3D"presentation" cl=
+ass=3D"main" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background: #ffffff; width: 100%; border-radius: 2px;">=
+=0A=09=09=09=09=09<tr>=0A=09=09=09=09=09=09<td class=3D"wrapper" style=3D'f=
+ont-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Robot=
+o,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; fo=
+nt-size: 16px; box-sizing: border-box; padding: 40px 56px;'>=0A=09=09=09=09=
+=09=09=09<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; width: 100%;">=0A=09=09=09=09=09=09=09=09<tr>=0A=09=09=
+=09=09=09=09=09=09=09<td style=3D'font-family: -apple-system, system-ui, bl=
+inkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarel=
+l, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=09=09=09=09=09=09=09=
+=09=09=09<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"header" style=3D"border-collapse: collapse; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin-bottom: 48px; line-=
+height: 24px;">=0A=09=09=09=09=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=
+=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<td class=3D"logo" style=3D'font-family: -app=
+le-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxyge=
+n-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px; v=
+ertical-align: middle; min-width: 88px; width: 30%;'>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09<img src=3D"https://brschultzgoldwave.files.wordpre=
+ss.com/2019/01/cropped-b76cbfce-1d3c-4618-9a93-40eba78dc7c1.jpeg?w=3D256" a=
+lt=3D"Site logo image" height=3D"32" style=3D"border: none; -ms-interpolati=
+on-mode: bicubic; max-width: 100%; max-height: 32px; display: block;">=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<td class=3D"header-right header-new-post" style=3D'font-family: -=
+apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Ox=
+ygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; text-align: rig=
+ht; font-size: 14px; vertical-align: middle;'>=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<span style=3D"=
+display: none;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09Schmitty=
+ posted: "=0A=0A"=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</span>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<span class=3D"header=
+-title">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://pub=
+lic-api.wordpress.com/bar/?stat=3Dgroovemails-events&amp;bin=3Dwpcom_email_=
+click&amp;redirect_to=3Dhttps%3A%2F%2Fbrschultzgoldwave.wordpress.com&amp;s=
+r=3D1&amp;signature=3D694fcf103bca23c7bb400204d512b046&amp;user=3Dba535b27c=
+7c97eb85a20ec931cf9bc4b&amp;_e=3DeyJlcnJvciI6bnVsbCwiYmxvZ19pZCI6MTU1NzEwOD=
+Y0LCJibG9nX2xhbmciOiJlbiIsInNpdGVfaWRfbGFiZWwiOiJ3cGNvbSIsImhhc19mZWF0dXJlZ=
+F9pbWFnZSI6IjAiLCJzdWJzY3JpYmVyX2lkIjoiNDk0MzQ5OTA5IiwiX3VpIjoiYmE1MzViMjdj=
+N2M5N2ViODVhMjBlYzkzMWNmOWJjNGIiLCJfdXQiOiJhbm9uIiwiZW1haWxfZG9tYWluIjoiZ21=
+haWwuY29tIiwicG9zdF9pZCI6NDQ4OTQsInVzZXJfZW1haWwiOiJvdmVyMTIwbW1oZ0BnbWFpbC=
+5jb20iLCJkYXRlX3NlbnQiOiIyMDI0LTAxLTAyIiwiZW1haWxfaWQiOiJiNzk5MmM2YTgzOTBkN=
+WMxMmQxZmMzZmZlMzAxMjZhYSIsImVtYWlsX25hbWUiOiJuZXctcG9zdCIsInRlbXBsYXRlIjoi=
+bmV3LXBvc3QiLCJsaW5rX2Rlc2MiOiJoZWFkZXItcG9zdCIsImFuY2hvcl90ZXh0IjoiYnJzY2h=
+1bHR6IGdvbGQgd2F2ZSBtYXJrZXQgdGltaW5nIiwiX2RyIjpudWxsLCJfZGwiOiJcL3Jlc3RcL3=
+YxLjJcL3NpdGVzXC8xNTU3MTA4NjRcL3Bvc3RzXC9uZXc/Y29udGV4dD1lZGl0JmxvY2FsZT1lb=
+iIsIl9lbiI6IndwY29tX2VtYWlsX2NsaWNrIiwiX3RzIjoxNzA0MTY3OTg1MDAxLCJicm93c2Vy=
+X3R5cGUiOiJwaHAtYWdlbnQiLCJfYXVhIjoid3Bjb20tdHJhY2tzLWNsaWVudC12MC4zIiwiX3V=
+sIjpudWxsLCJibG9nX3R6IjoiMCIsInVzZXJfbGFuZyI6bnVsbH0&amp;_z=3Dz" style=3D"t=
+ext-decoration: none; font-weight: 700; color: #101517;">brschultz gold wav=
+e market timing</a>=09=09=09=09=09=09=09=09=09=09=09=09=09=09</span>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=
+=09=09</tbody>=0A=09=09=09=09=09=09=09=09=09=09</table>=0A=0A<h1 class=3D"p=
+ost-name" style=3D"color: #2d3338; letter-spacing: -0.01em; line-height: 1.=
+15; margin-bottom: 30px; -webkit-font-smoothing: default; -moz-osx-font-smo=
+othing: auto; font-size: 40px; font-weight: 900; margin: 0 0 16px;">=0A=09<=
+a href=3D"https://public-api.wordpress.com/bar/?stat=3Dgroovemails-events&a=
+mp;bin=3Dwpcom_email_click&amp;redirect_to=3Dhttps%3A%2F%2Fbrschultzgoldwav=
+e.wordpress.com%2F2024%2F01%2F02%2Fbets-bitcoin-mining-bitcoins-continued-c=
+limb-hoping-that-bets-early-mid-february-macro-peak-gets-its-chance-to-skyr=
+ocket-meme-style-over-next-25-trading-days-into-its-macro-forecasted-peak%2=
+F&amp;sr=3D0&amp;signature=3Db5d399c9882564936b0cb3fdb3e4ebd3&amp;blog_id=
+=3D155710864&amp;user=3Dba535b27c7c97eb85a20ec931cf9bc4b&amp;_e=3DeyJlcnJvc=
+iI6bnVsbCwiYmxvZ19pZCI6MTU1NzEwODY0LCJibG9nX2xhbmciOiJlbiIsInNpdGVfaWRfbGFi=
+ZWwiOiJ3cGNvbSIsImhhc19mZWF0dXJlZF9pbWFnZSI6IjAiLCJzdWJzY3JpYmVyX2lkIjoiNDk=
+0MzQ5OTA5IiwiX3VpIjoiYmE1MzViMjdjN2M5N2ViODVhMjBlYzkzMWNmOWJjNGIiLCJfdXQiOi=
+Jhbm9uIiwiZW1haWxfZG9tYWluIjoiZ21haWwuY29tIiwicG9zdF9pZCI6NDQ4OTQsInVzZXJfZ=
+W1haWwiOiJvdmVyMTIwbW1oZ0BnbWFpbC5jb20iLCJkYXRlX3NlbnQiOiIyMDI0LTAxLTAyIiwi=
+ZW1haWxfaWQiOiJiNzk5MmM2YTgzOTBkNWMxMmQxZmMzZmZlMzAxMjZhYSIsImVtYWlsX25hbWU=
+iOiJuZXctcG9zdCIsInRlbXBsYXRlIjoibmV3LXBvc3QiLCJsaW5rX2Rlc2MiOiJwb3N0LXVybC=
+IsImFuY2hvcl90ZXh0IjoiQkVUUyBcdTIwMTMgQml0Y29pbiBtaW5pbmcgJiBiaXRjb2lucyBjb=
+250aW51ZWQgY2xpbWIgXHUyMDEzIGhvcGluZyB0aGF0IEJFVFMgZWFybHktbWlkIEZlYnJ1YXJ5=
+IG1hY3JvIHBlYWsgZ2V0cyBpdHMgY2hhbmNlIHRvIHNreXJvY2tldCBtZW1lLXN0eWxlIG92ZXI=
+gbmV4dCB+IDI1IHRyYWRpbmcgZGF5cyBpbnRvIGl0cyBtYWNybyBmb3JlY2FzdGVkIHBlYWtcdT=
+IwMjYiLCJfZHIiOm51bGwsIl9kbCI6IlwvcmVzdFwvdjEuMlwvc2l0ZXNcLzE1NTcxMDg2NFwvc=
+G9zdHNcL25ldz9jb250ZXh0PWVkaXQmbG9jYWxlPWVuIiwiX2VuIjoid3Bjb21fZW1haWxfY2xp=
+Y2siLCJfdHMiOjE3MDQxNjc5ODUwMDEsImJyb3dzZXJfdHlwZSI6InBocC1hZ2VudCIsIl9hdWE=
+iOiJ3cGNvbS10cmFja3MtY2xpZW50LXYwLjMiLCJfdWwiOm51bGwsImJsb2dfdHoiOiIwIiwidX=
+Nlcl9sYW5nIjpudWxsfQ=3D&amp;_z=3Dz" style=3D"color: #101517; text-decoratio=
+n: none;">BETS =E2=80=93 Bitcoin mining &amp; bitcoins continued climb =
+=E2=80=93 hoping that BETS early-mid February macro peak gets its chance to=
+ skyrocket meme-style over next ~ 25 trading days into its macro forecasted=
+ peak=E2=80=A6</a>=0A</h1>=0A=0A<table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"main-content" style=3D"border-c=
+ollapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100=
+%;">=0A=09<tbody>=0A=09<tr>=0A=09=09<td style=3D'font-family: -apple-system=
+, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, U=
+buntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=09=09=
+=09<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"person" style=3D"border-collapse: collapse; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; width: 100%; margin-bottom: 32px; margin-top=
+: 16px;">=0A=09=09=09=09<tbody>=0A=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=
+=09=09=09<td width=3D"64" style=3D'font-family: -apple-system, system-ui, b=
+linkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantare=
+ll, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=09=09=09=09=09=09<i=
+mg src=3D"https://1.gravatar.com/avatar/17d784d98341f24f6f21e5cb62447af686a=
+718170d8e682e23bb51595468cb8a?s=3D96&amp;d=3Didenticon&amp;r=3DG" class=3D"=
+profile-pic" width=3D"48" height=3D"48" style=3D"border: none; -ms-interpol=
+ation-mode: bicubic; max-width: 100%; border-radius: 24px; display: block; =
+width: 48px; height: 48px; margin-bottom: 24px; margin: 0;">=0A=09=09=09=09=
+=09</td>=0A=09=09=09=09=09=09=09=09=09=09<td style=3D'font-family: -apple-s=
+ystem, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sa=
+ns, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=
+=09=09=09=09=09=09<p class=3D"name" style=3D'font-family: -apple-system, sy=
+stem-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubunt=
+u, Cantarell, "Helvetica Neue", sans-serif; color: #101517; padding: 0; lin=
+e-height: 1.35; margin-bottom: 24px; font-weight: 700; letter-spacing: -0.0=
+1em; margin: 0; font-size: 16px;'>Schmitty</p>=0A=09=09=09=09=09=09<p class=
+=3D"meta is-date" style=3D'font-family: -apple-system, system-ui, blinkmacs=
+ystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Hel=
+vetica Neue", sans-serif; padding: 0; line-height: 1.35; margin-bottom: 24p=
+x; color: #646970; text-decoration: none; font-weight: 400; margin: 0; font=
+-size: 16px;'>=0A=09=09=09=09=09=09=09Jan 2=09=09=09=09=09=09</p>=0A=09=09=
+=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09=09</tbody>=0A=09=09=09</tabl=
+e>=0A=0A=09=09=09<div class=3D"post-body" style=3D"margin-bottom: 24px;">=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div data-user-content style=
+=3D"margin-bottom: 24px;">=0A=09=09=09=09=09=09<div class=3D"is-email" styl=
+e=3D"margin-bottom: 24px;">=0A<div class=3D"wp-block-image size-large" styl=
+e=3D"margin-bottom: 24px; margin: 0 0 1em;"><img data-attachment-id=3D"4488=
+4" data-permalink=3D"https://brschultzgoldwave.wordpress.com/2023/12/30/bet=
+s-bitcoin-mining-zz-v4-algo-daily-data-if-i-truly-pressed-the-zig-zag-v4-mo=
+del-to-see-what-it-truly-predicted-as-the-peak-it-picks-feb-5th-as-well-lik=
+e-cphi/bets-daily-zz-v4-peak-early-feb-2024/" data-orig-file=3D"https://brs=
+chultzgoldwave.files.wordpress.com/2023/12/bets-daily-zz.v4-peak-early-feb-=
+2024.png" data-orig-size=3D"1680,636" data-comments-opened=3D"1" data-image=
+-meta=3D'{"aperture":"0","credit":"","camera":"","caption":"","created_time=
+stamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0",=
+"title":"","orientation":"0"}' data-image-title=3D"bets-daily-zz.v4-peak-ea=
+rly-feb-2024" data-image-description data-image-caption data-medium-file=3D=
+"https://brschultzgoldwave.files.wordpress.com/2023/12/bets-daily-zz.v4-pea=
+k-early-feb-2024.png?w=3D300" data-large-file=3D"https://brschultzgoldwave.=
+files.wordpress.com/2023/12/bets-daily-zz.v4-peak-early-feb-2024.png?w=3D75=
+0" loading=3D"lazy" src=3D"https://brschultzgoldwave.files.wordpress.com/20=
+23/12/bets-daily-zz.v4-peak-early-feb-2024.png?w=3D560" alt class=3D"wp-ima=
+ge-44884" srcset=3D"https://brschultzgoldwave.files.wordpress.com/2023/12/b=
+ets-daily-zz.v4-peak-early-feb-2024.png?w=3D1022 1022w, https://brschultzgo=
+ldwave.files.wordpress.com/2023/12/bets-daily-zz.v4-peak-early-feb-2024.png=
+?w=3D150 150w, https://brschultzgoldwave.files.wordpress.com/2023/12/bets-d=
+aily-zz.v4-peak-early-feb-2024.png?w=3D300 300w, https://brschultzgoldwave.=
+files.wordpress.com/2023/12/bets-daily-zz.v4-peak-early-feb-2024.png?w=3D76=
+8 768w, https://brschultzgoldwave.files.wordpress.com/2023/12/bets-daily-zz=
+.v4-peak-early-feb-2024.png 1680w" sizes=3D"(max-width: 1024px) 100vw, 1024=
+px" style=3D"border: none; -ms-interpolation-mode: bicubic; max-width: 100%=
+; margin-bottom: 24px; margin: 0;"></div>=0A</div>=0A<div style=3D"margin-b=
+ottom: 24px; clear: both;"></div>=09=09=09=09=09</div>=0A=09=09=09=09=09=09=
+=09</div>=0A=09=09</td>=0A=09</tr>=0A=09</tbody>=0A</table>=0A=09=09=09<tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"actions" style=3D"border-collapse: collapse; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; margin: 24px 0 0; width: 100%;">=0A=09=09=09<tbody>=
+=0A=09=09=09=09<tr class=3D"btn-bar-wrapper">=0A=09=09=09=09=09<td class=3D=
+"float-td-left" style=3D'font-family: -apple-system, system-ui, blinkmacsys=
+temfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helve=
+tica Neue", sans-serif; font-size: 16px; width: 1%;'>=0A=09=09=09=09=09=09=
+=0A<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"btn btn-wrapper btn-primary" style=3D"border-collapse: coll=
+apse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box;=
+ width: auto; float: left; text-align: center;">=0A    <tbody>=0A    <tr>=
+=0A        <td align=3D"left" style=3D'font-family: -apple-system, system-u=
+i, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Can=
+tarell, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A            <tab=
+le role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"btn-anchor-wrapper" style=3D"border-collapse: collapse; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; width: auto; margin-right: 16px; border-=
+radius: 100px;">=0A                <tbody>=0A                <tr>=0A       =
+             <td style=3D'font-family: -apple-system, system-ui, blinkmacsy=
+stemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helv=
+etica Neue", sans-serif; font-size: 16px; background-color: #ffffff; text-a=
+lign: center; border-radius: 100px;'>=0A=09=09=09=09=09=09                 =
+           <a href=3D"https://public-api.wordpress.com/bar/?stat=3Dgroovema=
+ils-events&amp;bin=3Dwpcom_email_click&amp;redirect_to=3Dhttps%3A%2F%2Fbrsc=
+hultzgoldwave.wordpress.com%2F2024%2F01%2F02%2Fbets-bitcoin-mining-bitcoins=
+-continued-climb-hoping-that-bets-early-mid-february-macro-peak-gets-its-ch=
+ance-to-skyrocket-meme-style-over-next-25-trading-days-into-its-macro-forec=
+asted-peak%2F%23respond&amp;sr=3D0&amp;signature=3D5b7946752a182d2244b51392=
+b3e14e1b&amp;blog_id=3D155710864&amp;user=3Dba535b27c7c97eb85a20ec931cf9bc4=
+b&amp;_e=3DeyJlcnJvciI6bnVsbCwiYmxvZ19pZCI6MTU1NzEwODY0LCJibG9nX2xhbmciOiJl=
+biIsInNpdGVfaWRfbGFiZWwiOiJ3cGNvbSIsImhhc19mZWF0dXJlZF9pbWFnZSI6IjAiLCJzdWJ=
+zY3JpYmVyX2lkIjoiNDk0MzQ5OTA5IiwiX3VpIjoiYmE1MzViMjdjN2M5N2ViODVhMjBlYzkzMW=
+NmOWJjNGIiLCJfdXQiOiJhbm9uIiwiZW1haWxfZG9tYWluIjoiZ21haWwuY29tIiwicG9zdF9pZ=
+CI6NDQ4OTQsInVzZXJfZW1haWwiOiJvdmVyMTIwbW1oZ0BnbWFpbC5jb20iLCJkYXRlX3NlbnQi=
+OiIyMDI0LTAxLTAyIiwiZW1haWxfaWQiOiJiNzk5MmM2YTgzOTBkNWMxMmQxZmMzZmZlMzAxMjZ=
+hYSIsImVtYWlsX25hbWUiOiJuZXctcG9zdCIsInRlbXBsYXRlIjoibmV3LXBvc3QiLCJsaW5rX2=
+Rlc2MiOiJjb21tZW50LXBvc3QiLCJhbmNob3JfdGV4dCI6IkNvbW1lbnQiLCJfZHIiOm51bGwsI=
+l9kbCI6IlwvcmVzdFwvdjEuMlwvc2l0ZXNcLzE1NTcxMDg2NFwvcG9zdHNcL25ldz9jb250ZXh0=
+PWVkaXQmbG9jYWxlPWVuIiwiX2VuIjoid3Bjb21fZW1haWxfY2xpY2siLCJfdHMiOjE3MDQxNjc=
+5ODUwMDEsImJyb3dzZXJfdHlwZSI6InBocC1hZ2VudCIsIl9hdWEiOiJ3cGNvbS10cmFja3MtY2=
+xpZW50LXYwLjMiLCJfdWwiOm51bGwsImJsb2dfdHoiOiIwIiwidXNlcl9sYW5nIjpudWxsfQ=3D=
+&amp;_z=3Dz" class=3D"btn-anchor without-icon" target=3D"_blank" style=3D"b=
+ox-sizing: border-box; cursor: pointer; display: inline-block; font-size: 1=
+6px; font-weight: 400; margin: 0; white-space: nowrap; border-radius: 4px; =
+text-decoration: none; color: #ffffff; line-height: 24px; border: none; bac=
+kground-color: #0675c4; border-color: #0675c4; padding: 13px 24px;">=0A=09=
+=09=09=09=09=09=09=09=0A=09=09=09=09=09=09=09=09=0A                        =
+        <span>Comment</span>=0A                            </a>=0A         =
+           </td>=0A                </tr>=0A                </tbody>=0A     =
+       </table>=0A        </td>=0A    </tr>=0A    </tbody>=0A</table>=0A=09=
+=09=09=09=09</td>=0A=09=09=09=09=09<td style=3D'font-family: -apple-system,=
+ system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ub=
+untu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=09=09=
+=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09=09=09=09=
+=09=09=09<tr>=0A=09=09=09=09=09=09<td colspan=3D"2" style=3D'font-family: -=
+apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Ox=
+ygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px=
+;'>=0A=09=09=09=09=09=09=09<table role=3D"presentation" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"reply-nudge" style=3D"border-collaps=
+e: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; mar=
+gin-top: 24px;">=0A=09=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09<td class=3D"float-td-left" style=3D'f=
+ont-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Robot=
+o,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; wi=
+dth: 1%; vertical-align: middle; font-size: 14px; line-height: 150%; color:=
+ #2C3338;'>=0A=09=09=09=09=09=09=09=09=09=09<img src=3D"https://wordpress.c=
+om/i/emails/wpcom-notifications/icon-tip.png" width=3D"24" height=3D"24" al=
+t=3D"Tip icon image" style=3D"border: none; -ms-interpolation-mode: bicubic=
+; vertical-align: middle; max-width: 24px; padding-right: 4px;">=0A=09=09=
+=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-f=
+amily: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=
+=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; vertica=
+l-align: middle; font-size: 14px; line-height: 150%; color: #2C3338;'>=0A=
+=09=09=09=09=09=09=09=09=09=09<span>You can also reply to this email to lea=
+ve a comment.</span>=0A=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=
+=09=09=09</tr>=0A=09=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=09=09=09</=
+table>=0A=09=09=09=09=09=09</td>=0A=09=09=09=09=09</tr>=0A=09=09=09=09=09=
+=09=09</tbody>=0A=09=09</table>=0A=09=0A<table role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"footer-content" style=
+=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; width: 100%;">=0A=09<tbody>=0A=09<tr>=0A=09=09<!--ADS HERE-->=0A=09</tr>=
+=0A=09<tr>=0A=09=09<td colspan=3D"2" style=3D'font-family: -apple-system, s=
+ystem-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubun=
+tu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=09=09=09=
+<hr style=3D"border: 0; border-bottom: 1px solid #eaeaea; margin: 15px 0; m=
+argin-top: 24px; border-width: 0; background: #dcdcde; color: #dcdcde; heig=
+ht: 1px; width: 80px;">=0A=09=09=09<div class=3D"footer-content-section" st=
+yle=3D"margin: 0 0 24px 0; color: #2C3338; font-size: 14px; line-height: 15=
+0%;">=0A=09=09=09=09<p style=3D'font-family: -apple-system, system-ui, blin=
+kmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell,=
+ "Helvetica Neue", sans-serif; font-weight: 400; padding: 0; margin: 0; col=
+or: #2C3338; font-size: 14px; line-height: 150%;'>=0A=09=09=09=09=09<a href=
+=3D"https://public-api.wordpress.com/bar/?stat=3Dgroovemails-events&amp;bin=
+=3Dwpcom_email_click&amp;redirect_to=3Dhttps%3A%2F%2Fsubscribe.wordpress.co=
+m%2F%3Fkey%3D91fbe62997576ab40fc3e42d27cb24cd%26email%3Dover120mmhg%2540gma=
+il.com%26b%3DOzlB36Dwn_ON0KE8xHDBw0rMQ7eZlSTiBvDREy2tcMCVuan_d3pWPHWilPo89D=
+n2jhdjS0MZosCyWNDgNxKyp2bbtFEW0R_tMig8beFfLsPO_Eda4t4jK2gYWQnXD92-RPP2Fg8_h=
+OxhxySD1QEVAts6tqgSnMt1Nw%253D%253D&amp;sr=3D1&amp;signature=3Dd5b776578dc8=
+8f882e551e3c5923fbdb&amp;user=3Dba535b27c7c97eb85a20ec931cf9bc4b&amp;_e=3De=
+yJlcnJvciI6bnVsbCwiYmxvZ19pZCI6MTU1NzEwODY0LCJibG9nX2xhbmciOiJlbiIsInNpdGVf=
+aWRfbGFiZWwiOiJ3cGNvbSIsImhhc19mZWF0dXJlZF9pbWFnZSI6IjAiLCJzdWJzY3JpYmVyX2l=
+kIjoiNDk0MzQ5OTA5IiwiX3VpIjoiYmE1MzViMjdjN2M5N2ViODVhMjBlYzkzMWNmOWJjNGIiLC=
+JfdXQiOiJhbm9uIiwiZW1haWxfZG9tYWluIjoiZ21haWwuY29tIiwicG9zdF9pZCI6NDQ4OTQsI=
+nVzZXJfZW1haWwiOiJvdmVyMTIwbW1oZ0BnbWFpbC5jb20iLCJkYXRlX3NlbnQiOiIyMDI0LTAx=
+LTAyIiwiZW1haWxfaWQiOiJiNzk5MmM2YTgzOTBkNWMxMmQxZmMzZmZlMzAxMjZhYSIsImVtYWl=
+sX25hbWUiOiJuZXctcG9zdCIsInRlbXBsYXRlIjoibmV3LXBvc3QiLCJsaW5rX2Rlc2MiOiJtYW=
+5hZ2Utc3Vic2NyaXB0aW9uIiwiYW5jaG9yX3RleHQiOiJNYW5hZ2UiLCJfZHIiOm51bGwsIl9kb=
+CI6IlwvcmVzdFwvdjEuMlwvc2l0ZXNcLzE1NTcxMDg2NFwvcG9zdHNcL25ldz9jb250ZXh0PWVk=
+aXQmbG9jYWxlPWVuIiwiX2VuIjoid3Bjb21fZW1haWxfY2xpY2siLCJfdHMiOjE3MDQxNjc5ODU=
+wMDEsImJyb3dzZXJfdHlwZSI6InBocC1hZ2VudCIsIl9hdWEiOiJ3cGNvbS10cmFja3MtY2xpZW=
+50LXYwLjMiLCJfdWwiOm51bGwsImJsb2dfdHoiOiIwIiwidXNlcl9sYW5nIjpudWxsfQ=3D&amp=
+;_z=3Dz" style=3D"color: #0675c4; text-decoration: underline;">Manage</a> y=
+our email settings or unsubscribe.=09=09=09=09</p>=0A=09=09=09</div>=0A=0A=
+=09=09</td>=0A=09</tr>=0A=09</tbody>=0A</table>=0A=09=09=09=09=09=09=09=09=
+=09</td>=0A=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</table>=0A=
+=09=09=09=09=09=09</td>=0A=09=09=09=09=09</tr>=0A=09=09=09=09</table>=0A=09=
+=09=09</div>=0A=09=09</td>=0A=09</tr>=0A</table>=0A=0A<table role=3D"presen=
+tation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-co=
+llapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%=
+;">=0A=09<tbody>=0A=09=09<tr>=0A=09=09=09<td style=3D'font-family: -apple-s=
+ystem, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sa=
+ns, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px;'>=0A=
+=09=09=09=09<div class=3D"footer container" style=3D"display: block; max-wi=
+dth: 832px; clear: both; text-align: center; width: 100%; padding-bottom: 4=
+0px; margin: 0 auto;">=0A=09=09=09=09=09<div class=3D"footer-section" style=
+=3D"max-width: 752px; overflow: hidden; padding: 64px 56px; text-align: lef=
+t; box-sizing: border-box; margin: auto; padding-top: 0px; background-color=
+: #f6f7f7;">=0A=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"footer-c=
+ontent row row-5" align=3D"center" width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse: co=
+llapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; backgrou=
+nd-color: #f6f7f7;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-family: -apple-syste=
+m, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, =
+Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #101517; font-size:=
+ 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=09=09<table class=
+=3D"row-content stack" align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" style=3D"border-collapse:=
+ collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: =
+#f6f7f7; color: #000000; width: 100%;">=0A=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09<td class=3D"column column-1" width=3D"100%" style=3D'fon=
+t-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=
+=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; colo=
+r: #101517; font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; font-weight: 400; background-color: #f6f7f7; padding-left=
+: 8px; padding-right: 8px; vertical-align: top; padding-top: 8x; padding-bo=
+ttom: 0px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-l=
+eft: 0px;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tbody>=
+=0A=09=09=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09</td=
+>=0A=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=0A=09=09=
+=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"=
+footer-content row row-6" align=3D"center" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-colla=
+pse: collapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; b=
+ackground-color: #f6f7f7; margin: 0;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=
+=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-fa=
+mily: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=
+=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: =
+#101517; font-size: 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=
+=09=09<table class=3D"row-content stack" align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"600" style=
+=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; background-color: #f6f7f7; color: #000000; width: 100%;">=0A=09=09=09=09=
+=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"column column-1" width=
+=3D"100%" style=3D'font-family: -apple-system, system-ui, blinkmacsystemfon=
+t, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica N=
+eue", sans-serif; color: #101517; font-size: 14px; text-align: left; mso-ta=
+ble-rspace: 0pt; font-weight: 400; background-color: #f6f7f7; vertical-alig=
+n: top; padding-top: 0px; padding-bottom: 0px; border-top: 0px; border-righ=
+t: 0px; border-bottom: 0px; border-left: 0px;'>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09<table class=3D"image_block block-1" width=3D"100%" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"=
+border-collapse: collapse; width: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"pad" style=3D'font-f=
+amily: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=
+=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: =
+#101517; font-size: 14px; text-align: center; width: 100%; padding-right: 0=
+px; padding-left: 0px; padding-top: 8px;'>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09<div class=3D"alignment" align=3D"left" style=3D"line-=
+height: 10px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<im=
+g src=3D"https://s0.wordpress.com/i/emails/marketing/wpcom/footer/wpcom-jp-=
+dual-2x.png" width=3D"40" alt=3D"WordPress.com and Jetpack Logos" title=3D"=
+WordPress.com and Jetpack Logos" style=3D"-ms-interpolation-mode: bicubic; =
+display: block; height: auto; border: 0; width: 40; max-width: 100%;">=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>=0A=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=
+=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=
+=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=09=09</=
+table>=0A=09=09=09=09=09=09<table class=3D"footer-content row row-7" align=
+=3D"center" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"border-collapse: collapse; width: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f6f7f7; margi=
+n: 0;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09<tr>=0A=09=
+=09=09=09=09=09=09=09=09<td style=3D'font-family: -apple-system, system-ui,=
+ blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Canta=
+rell, "Helvetica Neue", sans-serif; color: #101517; font-size: 14px; text-a=
+lign: center;'>=0A=09=09=09=09=09=09=09=09=09=09<table class=3D"row-content=
+ stack" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" width=3D"600" style=3D"border-collapse: collapse; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f6f7f7; color:=
+ #000000; width: 100%;">=0A=09=09=09=09=09=09=09=09=09=09=09<tbody>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td class=3D"column column-1" width=3D"100%" style=3D'font-family: -a=
+pple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxy=
+gen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #101517; =
+font-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; font-weight: 400; background-color: #f6f7f7; vertical-align: top; pad=
+ding-top: 10px; padding-bottom: 25px; border-top: 0px; border-right: 0px; b=
+order-bottom: 0px; border-left: 0px;'>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<table class=3D"text_block block-1" width=3D"100%" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-col=
+lapse: collapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ word-break: break-word;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<=
+tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"pad" sty=
+le=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI"=
+, Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-se=
+rif; color: #101517; font-size: 14px; text-align: center;'>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09<div>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<div class=3D"txtTinyMce-wrapper" style=3D"paddi=
+ng-bottom: 5px; font-size: 12px; mso-line-height-alt: 21.6px; color: #10151=
+7; line-height: 19.2px; font-weight: 700; font-family: 'Helvetica Neue', He=
+lvetica, Arial, sans-serif;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<p style=3D'font-family: -apple-system, system-ui, blinkmacs=
+ystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Hel=
+vetica Neue", sans-serif; line-height: 1.7; padding: 0; color: #101517; mar=
+gin: 0; font-size: 16px; text-align: left; letter-spacing: normal; font-wei=
+ght: 700;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09G=
+et the Jetpack app to use Reader anywhere, anytime=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09</p>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09</div>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</div>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tab=
+le class=3D"text_block block-2" width=3D"100%" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse: collap=
+se; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: =
+break-word;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"pad" style=3D'font-f=
+amily: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=
+=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: =
+#101517; font-size: 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<div>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<div class=3D"txtTinyMce-wrapper" style=3D"font-size: 12px; =
+mso-line-height-alt: 21.6px; color: #101517; line-height: 18.2px; font-weig=
+ht: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D'font-f=
+amily: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=
+=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-we=
+ight: 400; line-height: 1.7; padding: 0; color: #101517; margin: 0; font-si=
+ze: 13px; text-align: left; mso-line-height-alt: 23.4px; letter-spacing: no=
+rmal;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09Fo=
+llow your favorite sites, save posts to read later, and get real-time notif=
+ications for likes and comments.=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09</p>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</div>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<=
+/table>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tbody>=0A=09=
+=09=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09</td>=0A=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=0A=09=09=09=
+=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"foo=
+ter-content row row-8" align=3D"center" width=3D"100%" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse=
+: collapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; back=
+ground-color: #f6f7f7; margin: 0;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=09=
+=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-famil=
+y: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=
+=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #10=
+1517; font-size: 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=09=
+=09<table class=3D"row-content stack" align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"600" style=3D"b=
+order-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bac=
+kground-color: #f6f7f7; color: #000000; width: 100%;">=0A=09=09=09=09=09=09=
+=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"column column-1" width=3D"100=
+%" style=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Seg=
+oe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", s=
+ans-serif; color: #101517; font-size: 14px; text-align: left; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; font-weight: 400; background-color: #f6f7f=
+7; vertical-align: top; padding-top: 0px; padding-bottom: 0px; border-top: =
+0px; border-right: 0px; border-bottom: 0px; border-left: 0px;'>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09<table class=3D"social_block block-1" widt=
+h=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"present=
+ation" style=3D"border-collapse: collapse; width: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"pad"=
+ style=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe=
+ UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", san=
+s-serif; color: #101517; font-size: 14px; padding-bottom: 25px; padding-top=
+: 0px; text-align: left; padding-right: 0px; padding-left: 0px;'>=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div class=3D"alignment" style=
+=3D"text-align: left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<table class=3D"social-table" width=3D"230px" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse: c=
+ollapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; display=
+: inline-block;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td s=
+tyle=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe U=
+I", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-=
+serif; color: #101517; font-size: 14px; text-align: center; padding: 0 10px=
+ 0 0;'><a href=3D"https://play.google.com/store/apps/details?id=3Dcom.jetpa=
+ck.android&amp;referrer=3Dutm_source%3D%notification%26utm_medium%3Demail%2=
+6utm_campaign%243Dnew-post" target=3D"_blank" style=3D"text-decoration: und=
+erline; color: #101517; font-size: 14px; text-align: center;"><img src=3D"h=
+ttps://s0.wordpress.com/i/emails/marketing/wpcom/footer/wpcom-gplay-2x.png"=
+ width=3D"115.86" height=3D"33.1" alt=3D"Download Jetpack on Google Play" t=
+itle=3D"Download Jetpack on Google Play" style=3D"-ms-interpolation-mode: b=
+icubic; max-width: 100%; display: block; height: auto; border: 0;"></a></td=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=
+=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", =
+Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-seri=
+f; color: #101517; font-size: 14px; text-align: center; padding: 0 4px 0 0;=
+'><a href=3D"https://apps.apple.com/app/apple-store/id1565481562?pt=3D29911=
+2&amp;ct=3Dnew-post&amp;mt=3D8" target=3D"_blank" style=3D"text-decoration:=
+ underline; color: #101517; font-size: 14px; text-align: center;"><img src=
+=3D"https://s0.wordpress.com/i/emails/marketing/wpcom/footer/wpcom-app-stor=
+e-2x.png" width=3D"115.86" height=3D"33.1" alt=3D"Download Jetpack from the=
+ App Store" title=3D"Download Jetpack from the App Store" style=3D"-ms-inte=
+rpolation-mode: bicubic; max-width: 100%; display: block; height: auto; bor=
+der: 0;"></a></td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tbody>=0A=09=09=09=
+=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09</td>=0A=09=09=
+=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=09=
+=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"footer-co=
+ntent row row-9" align=3D"center" width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse: co=
+llapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; backgrou=
+nd-color: #f6f7f7; margin: 0;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=09=09=
+=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-family: =
+-apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09O=
+xygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #101517=
+; font-size: 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=09=09<t=
+able class=3D"row-content stack" align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"600" style=3D"borde=
+r-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; backgro=
+und-color: #f6f7f7; color: #000000; width: 100%;">=0A=09=09=09=09=09=09=09=
+=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<td class=3D"column column-1" width=3D"100%" =
+style=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe =
+UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans=
+-serif; color: #101517; font-size: 14px; text-align: left; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; font-weight: 400; background-color: #f6f7f7; =
+vertical-align: top; padding-top: 10px; padding-bottom: 0px; border-top: 0p=
+x; border-right: 0px; border-bottom: 0px; border-left: 0px;'>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09<table class=3D"social_block block-1" widt=
+h=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"present=
+ation" style=3D"border-collapse: collapse; width: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"pad"=
+ style=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe=
+ UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", san=
+s-serif; color: #101517; font-size: 14px; padding-bottom: 20px; padding-top=
+: 10px; text-align: left;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<div class=3D"alignment" style=3D"text-align: left;">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"social-table" wid=
+th=3D"152px" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"border-collapse: collapse; width: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; display: inline-block;">=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09<td style=3D'font-family: -apple-system, s=
+ystem-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubun=
+tu, Cantarell, "Helvetica Neue", sans-serif; color: #101517; font-size: 14p=
+x; text-align: center; padding: 0 10px 0 0px;'>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://twitter.com/wordp=
+ressdotcom" target=3D"_blank" style=3D"text-decoration: underline; color: #=
+101517; font-size: 14px; text-align: center;">=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"https://s0.wordpress.=
+com/i/emails/marketing/wpcom/footer/wpcom-social-tw-2x.png" width=3D"24" he=
+ight=3D"24" alt=3D"WordPress.com on Twitter" title=3D"WordPress.com on Twit=
+ter" style=3D"-ms-interpolation-mode: bicubic; max-width: 100%; display: bl=
+ock; height: auto; border: 0;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</a>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09<td style=3D'font-family: -apple-system, system-ui, blinkmacsys=
+temfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helve=
+tica Neue", sans-serif; color: #101517; font-size: 14px; text-align: center=
+; padding: 0 10px 0 10px;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09<a href=3D"https://www.facebook.com/WordPresscom" target=
+=3D"_blank" style=3D"text-decoration: underline; color: #101517; font-size:=
+ 14px; text-align: center;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09<img src=3D"https://s0.wordpress.com/i/emails/marke=
+ting/wpcom/footer/wpcom-social-fb-2x.png" width=3D"24" height=3D"24" alt=3D=
+"WordPress.com on Facebook" title=3D"WordPress.com on Facebook" style=3D"-m=
+s-interpolation-mode: bicubic; max-width: 100%; display: block; height: aut=
+o; border: 0;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</a>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</=
+td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=
+=3D'font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", =
+Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-seri=
+f; color: #101517; font-size: 14px; text-align: center; padding: 0 10px 0 1=
+0px;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a =
+href=3D"https://www.instagram.com/wordpressdotcom/" target=3D"_blank" style=
+=3D"text-decoration: underline; color: #101517; font-size: 14px; text-align=
+: center;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<img src=3D"https://s0.wordpress.com/i/emails/marketing/wpcom/footer/=
+wpcom-social-ig-2x.png" width=3D"24" height=3D"24" alt=3D"WordPress.com on =
+Instagram" title=3D"WordPress.com on Instagram" style=3D"-ms-interpolation-=
+mode: bicubic; max-width: 100%; display: block; height: auto; border: 0;">=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</a>=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D'font-fam=
+ily: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=
+=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: =
+#101517; font-size: 14px; text-align: center; padding: 0 10px 0 10px;'>=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"h=
+ttps://www.youtube.com/c/WordPressdotcom" target=3D"_blank" style=3D"text-d=
+ecoration: underline; color: #101517; font-size: 14px; text-align: center;"=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img =
+src=3D"https://s0.wordpress.com/i/emails/marketing/wpcom/footer/wpcom-socia=
+l-yt-2x.png" width=3D"24" height=3D"24" alt=3D"WordPress.com on YouTube" ti=
+tle=3D"WordPress.com on YouTube" style=3D"-ms-interpolation-mode: bicubic; =
+max-width: 100%; display: block; height: auto; border: 0;">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</a>=0A=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09</div>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<=
+/td>=0A=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=
+=09=09=09</tbody>=0A=09=09=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=
+=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=
+=09</tbody>=0A=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09<table class=
+=3D"footer-content row row-10" align=3D"center" width=3D"100%" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-=
+collapse: collapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; background-color: #f6f7f7; margin: 0;">=0A=09=09=09=09=09=09=09<tbody>=
+=0A=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09<td style=3D'f=
+ont-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", Robot=
+o,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; co=
+lor: #101517; font-size: 14px; text-align: center;'>=0A=09=09=09=09=09=09=
+=09=09=09=09<table class=3D"row-content stack" align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"600" s=
+tyle=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; background-color: #f6f7f7; color: #000000; width: 100%;">=0A=09=09=09=
+=09=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"column column-1" wid=
+th=3D"100%" style=3D'font-family: -apple-system, system-ui, blinkmacsystemf=
+ont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica=
+ Neue", sans-serif; color: #101517; font-size: 14px; text-align: left; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; background-colo=
+r: #f6f7f7; vertical-align: top; padding-top: 0px; padding-bottom: 10px; bo=
+rder-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;'>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"image_block bl=
+ock-1" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"border-collapse: collapse; width: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt;">=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td clas=
+s=3D"pad" style=3D'font-family: -apple-system, system-ui, blinkmacsystemfon=
+t, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "Helvetica N=
+eue", sans-serif; color: #101517; font-size: 14px; text-align: center; widt=
+h: 100%; padding-right: 0px; padding-left: 0px;'>=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<div class=3D"alignment" align=3D"left" style=
+=3D"line-height: 10px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<a href=3D"https://public-api.wordpress.com/bar/?stat=3Dgroovemails-e=
+vents&amp;bin=3Dwpcom_email_click&amp;redirect_to=3Dhttps%3A%2F%2Fwordpress=
+.com&amp;sr=3D1&amp;signature=3D7e34f99b8a8f60a2979293df01c62e5d&amp;user=
+=3Dba535b27c7c97eb85a20ec931cf9bc4b&amp;_e=3DeyJlcnJvciI6bnVsbCwiYmxvZ19pZC=
+I6MTU1NzEwODY0LCJibG9nX2xhbmciOiJlbiIsInNpdGVfaWRfbGFiZWwiOiJ3cGNvbSIsImhhc=
+19mZWF0dXJlZF9pbWFnZSI6IjAiLCJzdWJzY3JpYmVyX2lkIjoiNDk0MzQ5OTA5IiwiX3VpIjoi=
+YmE1MzViMjdjN2M5N2ViODVhMjBlYzkzMWNmOWJjNGIiLCJfdXQiOiJhbm9uIiwiZW1haWxfZG9=
+tYWluIjoiZ21haWwuY29tIiwicG9zdF9pZCI6NDQ4OTQsInVzZXJfZW1haWwiOiJvdmVyMTIwbW=
+1oZ0BnbWFpbC5jb20iLCJkYXRlX3NlbnQiOiIyMDI0LTAxLTAyIiwiZW1haWxfaWQiOiJiNzk5M=
+mM2YTgzOTBkNWMxMmQxZmMzZmZlMzAxMjZhYSIsImVtYWlsX25hbWUiOiJuZXctcG9zdCIsInRl=
+bXBsYXRlIjoibmV3LXBvc3QiLCJsaW5rX2Rlc2MiOiJtYW5hZ2Utc3Vic2NyaXB0aW9uIiwiYW5=
+jaG9yX3RleHQiOiIiLCJfZHIiOm51bGwsIl9kbCI6IlwvcmVzdFwvdjEuMlwvc2l0ZXNcLzE1NT=
+cxMDg2NFwvcG9zdHNcL25ldz9jb250ZXh0PWVkaXQmbG9jYWxlPWVuIiwiX2VuIjoid3Bjb21fZ=
+W1haWxfY2xpY2siLCJfdHMiOjE3MDQxNjc5ODUwMDEsImJyb3dzZXJfdHlwZSI6InBocC1hZ2Vu=
+dCIsIl9hdWEiOiJ3cGNvbS10cmFja3MtY2xpZW50LXYwLjMiLCJfdWwiOm51bGwsImJsb2dfdHo=
+iOiIwIiwidXNlcl9sYW5nIjpudWxsfQ=3D&amp;_z=3Dz" target=3D"_blank" tabindex=
+=3D"-1" style=3D"text-decoration: underline; color: #101517; font-size: 14p=
+x; text-align: center; outline: none;">=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09<img src=3D"https://s0.wordpress.com/i/emails/marke=
+ting/wpcom/footer/wpcom-logo-wm-black-2x.png" width=3D"130" height=3D"22" a=
+lt=3D"WordPress.com Logo and Wordmark title=3D" wordpress.com logo and word=
+mark style=3D"-ms-interpolation-mode: bicubic; display: block; height: 22px=
+; border: 0; width: 130px; max-width: 100%; margin-top: 5px; margin-bottom:=
+ 5px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</a>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=09=
+=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=
+=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=09=09</tab=
+le>=0A=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"footer-content ro=
+w row-11" align=3D"center" width=3D"100%" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation" style=3D"border-collapse: collapse; w=
+idth: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color:=
+ #f6f7f7; margin: 0;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=
+=09=09<tr>=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-family: -apple-sy=
+stem, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-San=
+s, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #101517; font-si=
+ze: 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09<table class=3D"row-content stack" align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=
+=3D"600" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; background-color: #f6f7f7; color: #000000; width: 100%;">=
+=0A=09=09=09=09=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"column =
+column-1" width=3D"100%" style=3D'font-family: -apple-system, system-ui, bl=
+inkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarel=
+l, "Helvetica Neue", sans-serif; color: #101517; font-size: 14px; text-alig=
+n: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; ba=
+ckground-color: #f6f7f7; vertical-align: top; padding-top: 0px; padding-bot=
+tom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-le=
+ft: 0px;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table class=3D"text=
+_block block-1" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse: collapse; width: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<td class=3D"pad" style=3D'font-family: -appl=
+e-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen=
+-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #101517; fon=
+t-size: 14px; text-align: center;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<div>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<div class=3D"txtTinyMce-wrapper" style=3D"font-size: 12px; mso-line-hei=
+ght-alt: 21.6px; color: #101517; line-height: 18px; font-weight: 400; font-=
+family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09<p style=3D'font-family: -apple-system, system-ui, blinkm=
+acsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu, Cantarell, "=
+Helvetica Neue", sans-serif; font-weight: 400; line-height: 1.7; padding: 0=
+; color: #101517; margin: 0; font-size: 12px; text-align: left; letter-spac=
+ing: normal;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09<span style=3D"color: #101517; font-size: 14px; text-align: center; font=
+-weight: 600;">Automattic, Inc</span>. - 60 29th St. #343, San Francisco, C=
+A 94110=C2=A0=C2=A0=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</p>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tbody>=0A=09=09=09=
+=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09</td>=0A=09=09=
+=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=0A=09=09=09=09=09=
+=09</table>=0A=09=09=09=09=09=09<table class=3D"footer-content row row-12" =
+align=3D"center" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse: collapse; width: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f6f7f7;=
+ margin: 0;">=0A=09=09=09=09=09=09=09<tbody>=0A=09=09=09=09=09=09=09=09<tr>=
+=0A=09=09=09=09=09=09=09=09=09<td style=3D'font-family: -apple-system, syst=
+em-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen-Sans, Ubuntu,=
+ Cantarell, "Helvetica Neue", sans-serif; color: #101517; font-size: 14px; =
+text-align: center;'>=0A=09=09=09=09=09=09=09=09=09=09<table class=3D"row-c=
+ontent stack" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" width=3D"600" style=3D"border-collapse: collap=
+se; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f6f7f7=
+; color: #000000; width: 100%;">=0A=09=09=09=09=09=09=09=09=09=09<tbody>=0A=
+=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09<td class=3D"column column-1" width=3D"100%" style=3D'font-family: -appl=
+e-system, system-ui, blinkmacsystemfont, "Segoe UI", Roboto,=0A=09=09Oxygen=
+-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #101517; fon=
+t-size: 14px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; font-weight: 400; background-color: #f6f7f7; vertical-align: top; paddin=
+g-top: 0px; padding-bottom: 8px; border-top: 0px; border-right: 0px; border=
+-bottom: 0px; border-left: 0px;'>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<table class=3D"text_block block-1" width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse: co=
+llapse; width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-bre=
+ak: break-word;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09</td=
+>=0A=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=
+</tbody>=0A=09=09=09=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=
+=09=09</td>=0A=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09</tbody>=
+=0A=09=09=09=09=09=09</table>=0A=09=09=09=09=09</div>=0A=09=09=09=09</div>=
+=0A<!-- End -->=0A=09<img src=3D"https://pixel.wp.com/t.gif?has_featured_im=
+age=3D0&amp;subscriber_id=3D494349909&amp;_ui=3Dba535b27c7c97eb85a20ec931cf=
+9bc4b&amp;_ut=3Danon&amp;email_domain=3Dgmail.com&amp;blog_id=3D155710864&a=
+mp;post_id=3D44894&amp;user_email=3Dover120mmhg%40gmail.com&amp;date_sent=
+=3D2024-01-02&amp;email_id=3Db7992c6a8390d5c12d1fc3ffe30126aa&amp;email_nam=
+e=3Dnew-post&amp;template=3Dnew-post&amp;_en=3Dwpcom_email_open&amp;browser=
+_type=3Dphp-agent&amp;_aua=3Dwpcom-tracks-client-v0.3&amp;blog_tz=3D0&amp;b=
+log_lang=3Den&amp;_ts=3D1704167984940" style=3D"border: none; -ms-interpola=
+tion-mode: bicubic; max-width: 100%;">=0A<img alt border=3D"0" src=3D"http:=
+//pixel.wp.com/b.gif?blog=3D155710864&amp;post=3D44894&amp;subd=3Dbrschultz=
+goldwave&amp;ref=3D&amp;email=3D1&amp;email_o=3Dwpcom&amp;host=3Dbrschultzg=
+oldwave.wordpress.com" width=3D"1" height=3D"1" style=3D"border: none; -ms-=
+interpolation-mode: bicubic; max-width: 100%;">=0A</td>=0A</tr>=0A</tbody>=
+=0A</table>=0A</body>=0A</html>=0A
+
+--b1=_19SrblUVZTSNSuE1CzoSa6E4GtRRDoW5eiwzQro3nQ--
+

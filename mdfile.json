@@ -1,0 +1,244 @@
+[
+  {
+    "type": "Title",
+    "element_id": "3a528c7760c6f1812f81ed1bcc70e9d1",
+    "text": "Tax Preparer Letter",
+    "metadata": {
+      "category_depth": 0,
+      "languages": [
+        "eng"
+      ],
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "0da93bb03fc1bfdd7bfbcb2947215972",
+    "text": "From",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "3a528c7760c6f1812f81ed1bcc70e9d1",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "58eea1466668d5b5079a96b324e0ec21",
+    "text": "Mark Schwartz H & R Block Canada Inc 111 Main St N Markham, ON L3P 1X9",
+    "metadata": {
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "0da93bb03fc1bfdd7bfbcb2947215972",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "a408f5ad117800cefb5deef3619e52a8",
+    "text": "To",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "3a528c7760c6f1812f81ed1bcc70e9d1",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "2181804f8ce9022e547d5bec1f3b91fb",
+    "text": "Mordecai Machazire President Project Hamburg Corporation c/o Mordecai Machazire 230 King Street East PH123 Toronto, ON M5A 1K5",
+    "metadata": {
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "a408f5ad117800cefb5deef3619e52a8",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "a24291ae38d30673cfe08ac7133cd819",
+    "text": "Date",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "3a528c7760c6f1812f81ed1bcc70e9d1",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "976f112b5a29df89bc2a0e2e43050ff7",
+    "text": "November 10, 2023",
+    "metadata": {
+      "category_depth": 0,
+      "languages": [
+        "eng"
+      ],
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "28213a11c78d262ea67bdf5e50784199",
+    "text": "Key Points",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "976f112b5a29df89bc2a0e2e43050ff7",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "78b4194c6cc55e289bff0e13302da627",
+    "text": "The corporation is eligible to transmit its 2022 federal tax return electronically to Canada Revenue Agency (CRA) through Corporation Internet Filing.",
+    "metadata": {
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "28213a11c78d262ea67bdf5e50784199",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "e0c9b9e9bf3eef62f6175d8978fdf3c6",
+    "text": "Forms to be signed:",
+    "metadata": {
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "28213a11c78d262ea67bdf5e50784199",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "955f74c5fd5a02f00490cf55313f07a7",
+    "text": "Information Return for Corporations Filing Electronically (T183)",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "28213a11c78d262ea67bdf5e50784199",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "c88753d9dce9121985f18eb85c36e0f7",
+    "text": "Business Consent Confirmation Page",
+    "metadata": {
+      "category_depth": 0,
+      "languages": [
+        "eng"
+      ],
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "e38cc9eef13c2e198164b6390318a885",
+    "text": "Balance due: $2,242.00 on the federal tax return",
+    "metadata": {
+      "category_depth": 0,
+      "languages": [
+        "eng"
+      ],
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "ade82070db044f2bdbdb8b543b6c70bd",
+    "text": "Payment note: Payments of $10,000 or more to the Receiver General on or after January 1, 2024 must be made electronically. A $100 penalty may be imposed for each failure to comply.",
+    "metadata": {
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "e38cc9eef13c2e198164b6390318a885",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "9a6c1de8b442184017d847ccee7072d3",
+    "text": "Instalments: The corporation is not required to pay federal instalments based on the information provided.",
+    "metadata": {
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "e38cc9eef13c2e198164b6390318a885",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "79440451541fa3868ce729dbfae8f755",
+    "text": "Contact Information",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "e38cc9eef13c2e198164b6390318a885",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "80ba37123bef31fea9f8fa807ef71cd7",
+    "text": "Phone: (905) 472-9501",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "79440451541fa3868ce729dbfae8f755",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "bf9106d79181b2c958c559e5097be6e8",
+    "text": "Email: mordecai@projecthamburg.com",
+    "metadata": {
+      "category_depth": 1,
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "79440451541fa3868ce729dbfae8f755",
+      "filename": "tax-preparer-letter.md",
+      "filetype": "text/markdown"
+    }
+  }
+]

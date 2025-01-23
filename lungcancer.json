@@ -1,0 +1,1265 @@
+[
+  {
+    "type": "Title",
+    "element_id": "329285e84e37f53fb8ab2f73a68a5a17",
+    "text": "Also Known As",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "ea0b5dd1822f48a8fdea2654da6fa456",
+    "text": "Non-Small Cell Lung Cancer",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "7193e95bb6c290330a07d20f19379abe",
+    "text": "Small Cell Lung Cancer",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "4a3d1dbba212919c7417f22f6ad9ea8f",
+    "text": "This article was last reviewed on",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7193e95bb6c290330a07d20f19379abe",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "cc2db17531e759629308385400731c36",
+    "text": "30 January 2017.",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "cb90ff024ca355b46bc140c5bb45d22a",
+    "text": "This article waslast modified on 5 February 2019.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "cafde1b671466d0fbdc6f1e3c9140b85",
+    "text": "What is lung cancer",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "78c5fc1594dddf94ff22033048e03c45",
+    "text": "Lung cancer is the uncontrolled growth of abnormal cells originating within the lungs, usually in the layers of cells that line the air passages. These abnormal cells do not go through the natural stages of growth, division, and dying that normal cells do. They divide unchecked, often forming one or more masses of cells (tumours). Tumours can damage healthy tissue and grow large enough to interfere with breathing. Lung cancer can eventually spread (metastasize) beyond the lungs into nearby lymph nodes, tissues, and other organs.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "911fbf397f593bc9bfcab2b219cc554e",
+    "text": "The lungs are part of the respiratory (breathing) system and are located in the chest, inside the rib cage and above the diaphragm. When a person inhales, air enters the lungs and flows through passages of decreasing diameter called bronchi and bronchioles. These passages carry oxygen to small sacs (alveoli) deep within the lung, where oxygen moves from the lung into the bloodstream, and carbon dioxide, a by-product of metabolism, moves from the blood into the lung to be exhaled. Any lung disease that interferes with this exchange process, including lung cancer, can limit the amount of oxygen available and affect tissues and organs throughout the body.",
+    "metadata": {
+      "link_texts": [
+        "bronchi",
+        "bronchioles",
+        "metabolism",
+        "lung disease"
+      ],
+      "link_urls": [
+        "/glossary/bronchus",
+        "/glossary/bronchioles",
+        "/glossary/metabolism",
+        "/conditions/lung-diseases"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "1fb48d0b5dfe60db5f1a5989cf986f06",
+    "text": "According to Cancer Research UK, lung cancer is the third most common cancer in both men and women and accounts for more than a fifth of all cancer deaths. Cancer Research UK estimates that in 2014 there was 46,403 new cases of lung cancer and 35,895 deaths from lung cancer.. While anyone can get lung cancer, about 4 out of 10 new cases will be in people 75 years of age or older.",
+    "metadata": {
+      "link_texts": [
+        "Cancer Research UK",
+        "Cancer Research UK"
+      ],
+      "link_urls": [
+        "http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer",
+        "http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "f4d3b13ef16e7a2c10b0c71a9185a9d6",
+    "text": "Risk factors for developing lung cancer include:",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "bca5694f38a557785d60ad538b3f0e4d",
+    "text": "Smoking \u2013 at least 86% of lung cancer deaths are thought to be related to smoking. The more a person smokes, and the longer that he or she smokes, the greater the risk. Second-hand smoke also increases risk of lung cancer.",
+    "metadata": {
+      "category_depth": 1,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "a4fdde9eabaa89eac1818f2c53923a36",
+    "text": "Asbestos exposure \u2013 this can increase the risk of lung cancer, related to 6-8% of cancer cases. Asbestos is more commonly associated with mesothelioma, a rare cancer of the lining of the chest and abdomen. Most cases of mesothelioma \u2013 about 70% to 80% \u2013 arise in people with a history of working with asbestos, especially in the shipbuilding, construction, automotive, and fireproofing industries.",
+    "metadata": {
+      "category_depth": 1,
+      "link_texts": [
+        "mesothelioma"
+      ],
+      "link_urls": [
+        "/glossary/mesothelioma"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "a16183a0017c03e8c2eea696a4c9b368",
+    "text": "Rarely other factors may contribute such as occupational exposure to cancer-causing substances (carcinogens) e.g. arsenic, chromium, or air pollution (diesel engine exhaust), exposure to radiation (such as previous treatment for another type of cancer) or genetic factors where there is a family or personal history of lung cancer.",
+    "metadata": {
+      "category_depth": 1,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "5ed48c221aba08179025ba5471340ca1",
+    "text": "Lung cancer begins in one of the cell types that exist in the lungs. Most cases are thought to be due to an acquired genetic change or mutation in DNA that leads to the production of an abnormal protein that either promotes the uncontrolled growth of cells or inhibits their natural death.",
+    "metadata": {
+      "link_texts": [
+        "mutation",
+        "DNA"
+      ],
+      "link_urls": [
+        "/glossary/mutation",
+        "/glossary/dna"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "f3637e95be081a868d2c7496145eee7c",
+    "text": "Cancer that spreads from another part of the body to the lungs, such as metastatic breast cancer, is not considered lung cancer. Cancers that have spread to the lungs, sometimes called secondaries, from other areas are treated differently, such as according to the cancer type of origin (the primary).",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "e4380290fd7b3c940eca595e1d227da9",
+    "text": "There are two main categories of lung cancer, non-small cell and small cell. These cancers are named and differentiated based upon the size, shape, and characteristics of the tumour cells. Non-small cell lung cancer (NSCLC) is the most common type with several different varieties based on histological appearance (how the cells look down a microscope). NSCLC types include tumours common to both smokers and non-smokers. Small cell lung cancers (SCLC) are rarer and are most commonly, but not exclusively, seen in smokers. In addition, there are several much rarer types of lung cancer e.g. carcinoid and sarcoma.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "902b7e7fe6b44cfef2f907b08956ee17",
+    "text": "There are no UK data on survival from specific types of lung cancer. In 2007 a worldwide study, including 19 countries, called the Lung Cancer Staging Project showed survival differences based on stage of lung cancer (how advanced it was on presentation) and type. Stage 1 NSCLC had, at best 73% of people alive after 5 years, with 13% alive at 5 years with stage 4 cancer. For SCLC 40% of people were alive after 5 years with stage 1 and 1% alive at 5 years with stage 4 cancer. It is likely that these figures have changed in the intervening years, particularly with new treatments available.",
+    "metadata": {
+      "link_texts": [
+        "Lung Cancer Staging Project"
+      ],
+      "link_urls": [
+        "http://www.cancerresearchuk.org/about-cancer/type/lung-cancer/treatment/statistics-and-outlook-for-lung-cancer"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "cc2db17531e759629308385400731c36",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "b359327cfb52cdc595d859f9f39cf88b",
+    "text": "See More",
+    "metadata": {
+      "category_depth": 0,
+      "link_texts": [
+        "See More"
+      ],
+      "link_urls": [
+        "javascript:void(0)"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "439df17a3ffe21ae0e56290fc35456be",
+    "text": "See Less",
+    "metadata": {
+      "category_depth": 0,
+      "link_texts": [
+        "See Less"
+      ],
+      "link_urls": [
+        "javascript:void(0)"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "2ca88b166e235cf80a05a8b98e7748ee",
+    "text": "Accordion Title",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "18821a4d45593793ffcc640379fda270",
+    "text": "About Lung Cancer",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "f405f00de812f161764d03a7b084d43b",
+    "text": "Signs and Symptoms",
+    "metadata": {
+      "category_depth": 0,
+      "link_texts": [
+        "Signs and Symptoms"
+      ],
+      "link_urls": [
+        "#"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "93f6499c6a69e6c4024b584d8334a9eb",
+    "text": "It is difficult to detect lung cancer at an early stage. There are often no symptoms until the condition is well advanced. Examples of symptoms include:",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "c349b6b12e3d7d28bd310c445dc2817b",
+    "text": "Persistent cough",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "ea7c09f73b463ef16bf98b439983c6e5",
+    "text": "Persistent or recurrent lung infections (e.g., pneumonia, bronchitis)",
+    "metadata": {
+      "category_depth": 2,
+      "link_texts": [
+        "pneumonia"
+      ],
+      "link_urls": [
+        "/conditions/pneumonia"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "a36928cef153cbcbc157e3b4fc402afb",
+    "text": "Hoarseness of voice",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "31cf9825c88cc33f98a7cfa3e9464aa9",
+    "text": "Shortness of breath",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "c4c25a0d3c24c1e94138a15e24602897",
+    "text": "Wheezing",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "492e129d6c816d288ce386ad93b8cdec",
+    "text": "Chest pain",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "75eb63333732c55aee4f0de9a7ab7d2d",
+    "text": "Fatigue or weakness",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "213a53891b3204303958d75a47ca7e6e",
+    "text": "Weight loss",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "d6d2eb569828ee0ca6732f5f1195a9fb",
+    "text": "Loss of appetite",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "763b77761def8cf88831c9b252831c9a",
+    "text": "Coughing up blood",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "4a4824d6899fd8df3ca68ac284141d72",
+    "text": "Most people in the UK present as \u2018emergencies\u2019 to their GPs. When lung cancer spreads (metastasizes) to other areas of the body, other signs and symptoms related to those sites may develop. Examples include bone pain, neurological symptoms, and swollen lymph nodes.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f405f00de812f161764d03a7b084d43b",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "483bed206c6a68c0cf507787adbcdf5c",
+    "text": "Tests",
+    "metadata": {
+      "category_depth": 0,
+      "link_texts": [
+        "Tests"
+      ],
+      "link_urls": [
+        "#"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "962ed630e00aeaee53c7078dde480995",
+    "text": "The goals with testing for lung cancer are to detect it, determine the specific type and how far it has spread. This information helps guide treatment as will evaluation of a person's general state of health and lung function. There are no reliable and acceptable screening tests available therefore no screening program exists in the UK",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "084adeec222be676590d267c2409cd5f",
+    "text": "Often investigation starts with a chest X-ray to look for tumours. Likewise, sputum cytology, a method of obtaining cells from the lungs, may be used to look for cancer cells.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "f06e448a9e00b4787192244405802018",
+    "text": "Diagnosis and Staging A diagnosis of lung cancer is usually confirmed by examining tissue and/or cells from the lungs with a microscope. The tissue/cells can be obtained by biopsy (sometimes called a needle biopsy, fine needle aspiration or FNA), where a needle is inserted directly into the tumour via the skin or during bronchoscopy or a surgical procedure. Bronchoscopy is a procedure where a long, thin, lighted tube called a bronchoscope is inserted into the airways, via the mouth, to view the lungs and collect a tissue sample. Alternatively cells can also be found in the sputum, which can be coughed into a cup, or in the pleural fluid, fluid removed from the space between the lungs and chest wall. Pleural fluid can be sampled only in people who have an increased amount of fluid in this space since normally the amount of fluid present is too small to sample safely.",
+    "metadata": {
+      "emphasized_text_contents": [
+        "Diagnosis and Staging"
+      ],
+      "emphasized_text_tags": [
+        "i"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "3a8ed554cd25c3758799773b1ef0c21e",
+    "text": "If the tissue or cells are cancerous, the next step is to determine the stage (or extent) of disease. Treatment will depend in part on the \"stage\" of the cancer; it is categorized by how far it has spread from its original site. Staging primarily consists of examination and imaging tests.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "32aa6e8e3cfe1ba6768e24b6a7712947",
+    "text": "Guide Treatment Tests may be performed on tumour tissue to help guide therapy. Some people with non-small cell lung cancer (NSCLC) may be candidates for targeted therapy, depending on the type of NSCLC and results of some molecular tests. Targeted therapy is a newer type of cancer treatment that uses drugs that have a greater effect on cancerous tissue, reducing many of the side effects associated with standard therapy. It is based on the fact that the genetic makeup of the cancer cells is different than the normal cells around them. Targeted therapy aims to disrupt specific steps or processes that are somewhat unique to the growth of cancer cells.",
+    "metadata": {
+      "emphasized_text_contents": [
+        "Guide Treatment"
+      ],
+      "emphasized_text_tags": [
+        "i"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "5d7aff82e286fd243f39708d216ceb42",
+    "text": "Other laboratory tests General testing is often used to help assess an affected person's health and/or to monitor them during treatment. Some of these tests may include:",
+    "metadata": {
+      "emphasized_text_contents": [
+        "Other laboratory tests"
+      ],
+      "emphasized_text_tags": [
+        "b"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "b3940a8fff718af2319eba5a221494bd",
+    "text": "FBC (full blood count)\u2013 to evaluate blood cells",
+    "metadata": {
+      "category_depth": 2,
+      "link_texts": [
+        "FBC"
+      ],
+      "link_urls": [
+        "/tests/full-blood-count-fbc"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "28fb85fe8f4751245032df9506c1c139",
+    "text": "Biochemistry screen \u2013 to evaluate organ function such as kidneys and liver",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "501c06eea494115ae2b56a82d40a46e3",
+    "text": "Blood gases (or ABGs) \u2013 a blood sample is collected from an artery to measure blood pH, oxygen and carbon dioxide to evaluate how well the lungs are working",
+    "metadata": {
+      "category_depth": 2,
+      "link_texts": [
+        "Blood gases (or ABGs)"
+      ],
+      "link_urls": [
+        "/tests/blood-gas-tests"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "a4363c45dca4df78670b6ce97c51d832",
+    "text": "Sputum culture \u2013 used to detect and identify bacterial lung infections",
+    "metadata": {
+      "category_depth": 2,
+      "link_texts": [
+        "Sputum culture",
+        "bacterial"
+      ],
+      "link_urls": [
+        "/glossary/sputum",
+        "/glossary/bacterium"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "5548ea15a48d6d867c178e901c09286c",
+    "text": "Non-laboratory tests Pulmonary function tests (PFTs) may be used to help evaluate lung function.",
+    "metadata": {
+      "emphasized_text_contents": [
+        "Non-laboratory tests"
+      ],
+      "emphasized_text_tags": [
+        "b"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "f57b59c1ae61dafd33bef16127087915",
+    "text": "A variety of imaging tests are used to help diagnose and stage lung cancers. They include:",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "615e9828d770710299e69a70224e87f8",
+    "text": "Chest x-ray",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "bef1a592af9cfab0e83c9ba636140269",
+    "text": "Computed tomography (CT) scan",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "2fd902213799bef027d8a193d6466f4e",
+    "text": "Magnetic resonance imaging (MRI) scan",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "44ce44b089749d0e57e1183f30ba7b4c",
+    "text": "Positron emission tomography (PET) scan",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "80eacf04dfcb0fdda2c8d8b5db8c5342",
+    "text": "Ultrasound",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "5fde1f6b4020afe51adf6c4649d69a20",
+    "text": "Bone scan",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "a8b86d4a754526097edef0f3d0976f3d",
+    "text": "For additional details about these procedures, visit the Society of Radiographers.",
+    "metadata": {
+      "link_texts": [
+        "the Society of Radiographers"
+      ],
+      "link_urls": [
+        "http://www.sor.org/about-radiography/patient-information"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "483bed206c6a68c0cf507787adbcdf5c",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "7930005ea47d2fe5c0be05970eb4d280",
+    "text": "Treatment",
+    "metadata": {
+      "category_depth": 0,
+      "link_texts": [
+        "Treatment"
+      ],
+      "link_urls": [
+        "#"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "9689f694732a8bd8d34dde0003e7c922",
+    "text": "Appropriate lung cancer treatment depends upon the type of cancer, its stage, and its characteristics. Staging evaluates the size of the cancer, its location, and how far it has spread. UK diagnosis and treatment pathways are available to view via the National Institute for Health and Care Excellence. Treatments may include:",
+    "metadata": {
+      "link_texts": [
+        "National Institute"
+      ],
+      "link_urls": [
+        "https://pathways.nice.org.uk/pathways/lung-cancer"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "169717a4143b00c712f948002057a975",
+    "text": "Surgery to remove part of a lobe of a lung, a lobe of a lung, or an entire lung",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "1d885a301182a31d9ad246806ddccce8",
+    "text": "Surgery to help relieve symptoms such as airway blockages or fluid accumulation",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "cfa03c8c858f5f8e62e1b90d64bea409",
+    "text": "Radiation therapy",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "c78385365c9a9278fbab11beb18b9718",
+    "text": "Chemotherapy",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "ListItem",
+    "element_id": "1f2cbe15e18aa93d21807b26591b6aa9",
+    "text": "Targeted therapy, primarily specific drug therapies",
+    "metadata": {
+      "category_depth": 2,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "NarrativeText",
+    "element_id": "2408f847e7b7ba1d9c353ea602cbc7a8",
+    "text": "People who become resistant to available treatments and/or have inoperable lung cancer may be offered palliative treatments to help alleviate symptoms and improve the remaining quality of life. These can include chemotherapy and radiotherapy modalities.",
+    "metadata": {
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "7930005ea47d2fe5c0be05970eb4d280",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "255e5f15cee09296f27b0292956948d8",
+    "text": "Related Content",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "f73ab5651c98338f511f7b1432b399d8",
+    "text": "On This Site",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "UncategorizedText",
+    "element_id": "b2e9ba1b9a0c5a566aa45ded6b166881",
+    "text": "Tests: Genetic Tests for Targeted Cancer Therapy, EGFR Mutation Testing, KRAS Mutation, ALK Mutation, Sputum Culture, Pleural Fluid Analysis Conditions: Lung Diseases",
+    "metadata": {
+      "emphasized_text_contents": [
+        "EGFR",
+        "KRAS",
+        "ALK"
+      ],
+      "emphasized_text_tags": [
+        "i",
+        "i",
+        "i"
+      ],
+      "link_texts": [
+        "EGFR Mutation Testing",
+        "KRAS Mutation",
+        "Sputum Culture",
+        "Pleural Fluid Analysis",
+        "Lung Diseases"
+      ],
+      "link_urls": [
+        "/tests/egfr-estimated-creatinine-clearance",
+        "/tests/ras-kras-and-nras-all-ras-testing",
+        "/tests/sputum-culture",
+        "/tests/pleural-fluid-analysis",
+        "/conditions/lung-diseases"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "parent_id": "f73ab5651c98338f511f7b1432b399d8",
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "8fcf896ce08cea8bb3c0d92e0cd07e7a",
+    "text": "Elsewhere On The Web",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "6f0b3cf6c6a1d9d69c8d3e1d59c9f8cd",
+    "text": "Cancer Research UK NICE Macmillan cancer support British Lung Foundation NHS Choices",
+    "metadata": {
+      "category_depth": 0,
+      "link_texts": [
+        "Cancer Research UK",
+        "NICE",
+        "Macmillan cancer support",
+        "British Lung Foundation",
+        "NHS Choices"
+      ],
+      "link_urls": [
+        "http://www.cancerresearchuk.org/",
+        "https://pathways.nice.org.uk/pathways/lung-cancer",
+        "https://www.macmillan.org.uk/",
+        "https://www.blf.org.uk/support-for-you/lung-cancer",
+        "http://www.nhs.uk/conditions/Cancer-of-the-lung/Pages/Introduction.aspx"
+      ],
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "9f3da6917bd2438dd1afa160f566917f",
+    "text": "Related Images",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "0c60aa060d41299c7545ed4dad2eac8f",
+    "text": "View More",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  },
+  {
+    "type": "Title",
+    "element_id": "a51f250c15c5f9fad9e25ad4a06cdef2",
+    "text": "Source: National Cancer Institute",
+    "metadata": {
+      "category_depth": 0,
+      "last_modified": "2024-07-05T20:28:53",
+      "languages": [
+        "eng"
+      ],
+      "file_directory": ".",
+      "filename": "lung-cancer.html",
+      "filetype": "text/html"
+    }
+  }
+]
